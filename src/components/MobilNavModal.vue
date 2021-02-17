@@ -90,4 +90,7 @@ export default {
   justify-content: center;
   align-items: center;
 }
+li {
+  font-weight: bold;
+}
 </style>
