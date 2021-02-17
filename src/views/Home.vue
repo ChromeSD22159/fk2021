@@ -16,7 +16,9 @@
         & Mediengestalter
       </h2>
     </div>
-    <section class="max-w-xs md:max-w-screen-md mx-auto py-16 -mt-5 rounded-md">
+    <section
+      class="w-10/12 md:max-w-screen-md mx-auto py-16 -mt-2 sm:mt-2 rounded-md"
+    >
       <div class="flex flex-col sm:flex-row">
         <div class="sm:w-1/2 flex items-center justify-center">
           <transition name="slide-fade" mode="out-in">
