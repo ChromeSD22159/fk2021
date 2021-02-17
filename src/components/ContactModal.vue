@@ -18,10 +18,10 @@
           ></path>
         </svg>
       </div>
-      <h2 class="pb-4">
+      <h2 class="pb-4 text-center">
         Melde Dich bei mir und fals dir meine Bewerbung gefallen hat!
       </h2>
-      <p class="pb-4">Ich freue mich auf eine Nachricht!</p>
+      <p class="pb-4 text-center">Ich freue mich auf eine Nachricht!</p>
       <ul class="flex justify-between flex-wrap">
         <li
           v-for="contact in contacts"
