@@ -83,6 +83,8 @@ export default {
       routes: [
         { name: 'Home', url: '' },
         { name: 'Über mich', url: 'about' },
+        { name: 'Digital', url: 'digital' },
+        { name: 'Print', url: 'print' },
         { name: 'Contact', url: 'contact' },
       ],
     }

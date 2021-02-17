@@ -116,12 +116,20 @@ p {
   font-weight: 400;
   text-align: left;
 }
+
 h2.hero {
   font-size: clamp(20px, 5vw, 40px);
   font-style: italic;
   font-weight: bold;
   text-transform: uppercase;
   color: #fff;
+}
+
+h2 {
+  font-size: 1.25em;
+  font-weight: bold;
+  color: #fff;
+  text-align: left;
 }
 
 h2.words {

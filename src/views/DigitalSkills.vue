@@ -17,19 +17,30 @@
       </h2>
     </div>
     <section
-      class="w-10/12 md:max-w-screen-md mx-auto py-16 -mt-2 sm:mt-2 rounded-md"
+      class="w-10/12 md:max-w-screen-md mx-auto py-16 -mt-2 sm:mt-5 rounded-md"
     >
       <div class="flex flex-col sm:flex-row">
-        <div class="sm:w-1/2 flex items-center justify-center">
-          <transition name="slide-fade" mode="out-in">
-            <h2 class="words pb-5 sm:pb-0" :key="word">{{ word }}!</h2>
-          </transition>
-        </div>
-        <div class="sm:w-1/2 flex items-center justify-center">
+        <div class="sm:w-1/2 flex items-center justify-center pb-4 sm:pb-0">
           <img
-            :src="require(`@/assets/images/frederikkohler.png`)"
+            :src="require(`@/assets/images/frederikkohler_digital_skills.png`)"
             alt="Frederik Kohler Comic Art"
           />
+        </div>
+        <div class="sm:w-1/2 flex flex-col p-4">
+          <h2 class="contact pb-4">
+            Meine Digitale Expertice!
+          </h2>
+          <div class="w-full pr-0 sm:pr-4">
+            <Skills name="HTML" stars="5" />
+            <Skills name="CSS" stars="5" />
+            <Skills name="PHP" stars="4" />
+            <Skills name="JavaScript" stars="4" />
+            <Skills name="VUE JS" stars="3" />
+            <Skills name="WordPress" stars="4" />
+            <Skills name="Git" stars="2" />
+            <Skills name="tailwind CSS" stars="4" />
+            <Skills name="UiKit" stars="5" />
+          </div>
         </div>
       </div>
     </section>
@@ -41,32 +52,19 @@
 // @ is an alias to /src
 import Header from '@/components/Header.vue'
 import Footer from '@/components/Footer.vue'
-const words = ['Hallo', 'Hola', 'Servus', 'Grüezi', 'Aloha', 'Hoi', 'Moin']
+import Skills from '@/components/Skills.vue'
 
 export default {
-  name: 'Home',
+  name: 'Print',
   components: {
     Header,
     Footer,
+    Skills,
   },
   data: function () {
     return {
       word: 'hey',
     }
-  },
-  methods: {
-    updateWord: function () {
-      setInterval(() => {
-        let formel = (Math.random() * (words.length + 1) * 100) / 100,
-          flor = Math.floor(formel)
-        this.word = words[flor]
-      }, 2000)
-
-      return
-    },
-  },
-  mounted: function () {
-    this.updateWord()
   },
 }
 </script>
@@ -96,8 +94,9 @@ section {
 }
 p {
   color: #fff;
+  font-weight: 400;
+  text-align: left;
 }
-
 h2.hero {
   font-size: clamp(20px, 5vw, 40px);
   font-style: italic;
@@ -112,13 +111,20 @@ h2 {
   color: #fff;
   text-align: left;
 }
-
-h2.words {
-  font-size: clamp(20px, 10vw, 80px);
-  font-style: italic;
+li {
   font-weight: bold;
-  text-transform: uppercase;
+  text-align: left;
+}
+li > a {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
   color: #fff;
+}
+
+li img {
+  filter: brightness(100);
 }
 
 .slide-fade-enter-active {
