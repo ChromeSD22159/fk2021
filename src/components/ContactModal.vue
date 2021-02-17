@@ -26,7 +26,7 @@
         <li
           v-for="contact in contacts"
           v-bind:key="contact.name"
-          class="py-5 sm:py-0 px-2"
+          class="w-1/2 sm:w-1/4 py-5 sm:py-0 px-2"
         >
           <a :href="contact.url" target="_blank" class="text-xl sm:text-sm">
             <img
