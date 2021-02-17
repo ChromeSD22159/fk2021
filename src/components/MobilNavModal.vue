@@ -4,11 +4,11 @@
     <div
       class="mobil-header top-0 z-40 lg:z-50 w-full max-w-8xl mx-auto flex items-center justify-between"
     >
-      <div class="pl-4 w-1/2 md:w-60 xl:w-72">
+      <div class="pl-4 sm:pl-10 w-1/2 md:w-60 xl:w-72">
         <img :src="require(`@/assets/images/frederikkohler_logo.svg`)" />
       </div>
 
-      <div class="pr-4 w-1/2 md:w-60 xl:w-72 flex justify-end">
+      <div class="pr-4 sm:pr-10 w-1/2 md:w-60 xl:w-72 flex justify-end">
         <div
           class="icon-background p-2 m-2"
           v-show="NavActive"
