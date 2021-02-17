@@ -15,7 +15,6 @@
 
       <div class="pr-4 w-1/2 md:w-60 xl:w-72 flex justify-end">
         <!-- Contact Link -->
-
         <div class="icon-background p-2 m-2" v-on:click="toogleContact">
           <svg
             class="w-6 h-6"

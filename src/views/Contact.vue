@@ -16,18 +16,37 @@
         & Mediengestalter
       </h2>
     </div>
-    <section class="max-w-xs md:max-w-screen-md mx-auto py-16 -mt-5 rounded-md">
+    <section
+      class="w-10/12 md:max-w-screen-md mx-auto py-16 -mt-2 sm:mt-5 rounded-md"
+    >
       <div class="flex flex-col sm:flex-row">
-        <div class="sm:w-1/2 flex items-center justify-center">
-          <transition name="slide-fade" mode="out-in">
-            <h2 class="words pb-5 sm:pb-0" :key="word">{{ word }}!</h2>
-          </transition>
-        </div>
-        <div class="sm:w-1/2 flex items-center justify-center">
+        <div class="sm:w-1/2 flex items-center justify-center pb-4 sm:pb-0">
           <img
             :src="require(`@/assets/images/frederikkohler.png`)"
             alt="Frederik Kohler Comic Art"
           />
+        </div>
+        <div class="sm:w-1/2 flex flex-col p-4">
+          <h2 class="contact pb-4">
+            Melde Dich bei mir und fals dir meine Bewerbung gefallen hat!
+          </h2>
+          <p class="pb-4">Ich freue mich auf eine Nachricht!</p>
+          <ul class="flex justify-between flex-wrap">
+            <li
+              v-for="contact in contacts"
+              v-bind:key="contact.name"
+              class="py-5 sm:pt-0 px-2 pb-4 w-1/2 flex justify-center sm:justify-start"
+            >
+              <a :href="contact.url" target="_blank" class="text-xl sm:text-sm">
+                <img
+                  :src="require(`@/assets/images/icon-${contact.name}.svg`)"
+                  :alt="'icon ' + contact.name"
+                  height="auto"
+                />
+                {{ contact.name }}.
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
     </section>
@@ -39,10 +58,9 @@
 // @ is an alias to /src
 import Header from '@/components/Header.vue'
 import Footer from '@/components/Footer.vue'
-const words = ['Hallo', 'Hola', 'Servus', 'Grüezi', 'Aloha', 'Hoi', 'Moin']
 
 export default {
-  name: 'Contact',
+  name: 'About',
   components: {
     Header,
     Footer,
@@ -50,21 +68,16 @@ export default {
   data: function () {
     return {
       word: 'hey',
+      contacts: [
+        {
+          name: 'xing',
+          url: 'https://www.xing.com/profile/Frederik_Kohler2/cv',
+        },
+        { name: 'github', url: 'https://github.com/ChromeSD22159/fk2021' },
+        { name: 'phone', url: 'tel:+41782125777' },
+        { name: 'mail', url: 'mailto:info@frederikkohler.de' },
+      ],
     }
-  },
-  methods: {
-    updateWord: function () {
-      setInterval(() => {
-        let formel = (Math.random() * (words.length + 1) * 100) / 100,
-          flor = Math.floor(formel)
-        this.word = words[flor]
-      }, 2000)
-
-      return
-    },
-  },
-  mounted: function () {
-    this.updateWord()
   },
 }
 </script>
@@ -94,21 +107,30 @@ section {
 }
 p {
   color: #fff;
+  font-weight: 400;
+  text-align: left;
 }
-h2.hero {
-  font-size: clamp(20px, 5vw, 40px);
-  font-style: italic;
+
+h2.contact {
+  font-size: 1.25em;
   font-weight: bold;
-  text-transform: uppercase;
+  color: #fff;
+  text-align: left;
+}
+li {
+  font-weight: bold;
+  text-align: left;
+}
+li > a {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
   color: #fff;
 }
 
-h2.words {
-  font-size: clamp(20px, 10vw, 80px);
-  font-style: italic;
-  font-weight: bold;
-  text-transform: uppercase;
-  color: #fff;
+li img {
+  filter: brightness(100);
 }
 
 .slide-fade-enter-active {
