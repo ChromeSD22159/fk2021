@@ -30,7 +30,13 @@
           <h2 class="dark pb-4">
             Meine Digitale Expertice!
           </h2>
-          <div class="w-full pr-0 sm:pr-4">
+
+          <sequential-entrance
+            fromLeft
+            tag="div"
+            delay="350"
+            class="w-full pr-0 sm:pr-4"
+          >
             <Skills name="HTML" stars="5" />
             <Skills name="CSS" stars="5" />
             <Skills name="PHP" stars="4" />
@@ -40,7 +46,7 @@
             <Skills name="Git" stars="2" />
             <Skills name="tailwind CSS" stars="4" />
             <Skills name="UiKit" stars="5" />
-          </div>
+          </sequential-entrance>
         </div>
       </div>
     </section>

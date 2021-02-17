@@ -30,14 +30,20 @@
           <h2 class="dark pb-4">
             Meine Print Expertice!
           </h2>
-          <div class="w-full pr-0 sm:pr-4">
+
+          <sequential-entrance
+            fromLeft
+            tag="div"
+            delay="550"
+            class="w-full pr-0 sm:pr-4"
+          >
             <Skills name="Adobe Photoshop" stars="5" />
             <Skills name="Adobe InDesign" stars="3" />
             <Skills name="Adobe Illustrator" stars="5" />
             <Skills name="Affinity Designer" stars="2" />
             <Skills name="Affinity Photo" stars="1" />
             <Skills name="Affinity Publisher" stars="5" />
-          </div>
+          </sequential-entrance>
         </div>
       </div>
     </section>

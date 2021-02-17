@@ -50,7 +50,7 @@
     </div>
     <!-- Menu -->
     <div class="burger-menu">
-      <ul>
+      <sequential-entrance tag="ul">
         <li
           v-for="route in routes"
           v-bind:key="route.name"
@@ -59,7 +59,7 @@
         >
           <router-link :to="'/' + route.url">{{ (route.name) }}</router-link>
         </li>
-      </ul>
+      </sequential-entrance>
     </div>
   </div>
 </template>
