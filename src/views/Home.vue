@@ -87,7 +87,7 @@ div.hero::before {
 section {
   position: relative;
   z-index: 5;
-  background: rgba(255, 149, 57, 0.915);
+  background: rgba(255, 149, 57, 0.85);
 }
 p {
   color: #fff;

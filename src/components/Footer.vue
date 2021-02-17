@@ -40,6 +40,7 @@ export default {
 a,
 p {
   font-family: 'Maven Pro', sans-serif;
+  font-weight: bold;
   text-transform: uppercase;
 }
 </style>

@@ -67,7 +67,7 @@ export default {
       MobileNav: false,
       routes: [
         { name: 'Home', url: '' },
-        { name: 'Explore', url: 'explore' },
+        { name: 'Über mich', url: 'about' },
         { name: 'Contact', url: 'contact' },
       ],
     }
