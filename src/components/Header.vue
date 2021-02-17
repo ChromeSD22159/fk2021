@@ -14,7 +14,9 @@
       </div>
 
       <div class="pr-4 w-1/2 md:w-60 xl:w-72 flex justify-end">
-        <div class="icon-background p-2 m-2">
+        <!-- Contact Link -->
+
+        <div class="icon-background p-2 m-2" v-on:click="toogleContact">
           <svg
             class="w-6 h-6"
             fill="none"
@@ -30,6 +32,8 @@
             ></path>
           </svg>
         </div>
+
+        <!-- BurgerMenu link -->
         <div class="icon-background p-2 m-2" v-on:click="toogleNav">
           <svg
             class="w-6 h-6"
@@ -55,21 +59,28 @@
         @CloseNav="toogleNav"
       />
     </transition>
+    <transition name="fade">
+      <ContactModal v-show="Contact" @CloseContact="toogleContact" />
+    </transition>
   </div>
 </template>
 
 <script>
 import Logo from '@/assets/images/frederikkohler_logo.svg'
+
 import MobilNavModal from '@/components/MobilNavModal.vue'
+import ContactModal from '@/components/ContactModal.vue'
 
 export default {
   components: {
     MobilNavModal,
+    ContactModal,
   },
   data: function () {
     return {
       scrollPosition: '',
       MobileNav: false,
+      Contact: false,
       routes: [
         { name: 'Home', url: '' },
         { name: 'Über mich', url: 'about' },
@@ -84,6 +95,9 @@ export default {
     },
     toogleNav: function () {
       this.MobileNav = !this.MobileNav
+    },
+    toogleContact: function () {
+      this.Contact = !this.Contact
     },
   },
   mounted() {
@@ -110,5 +124,6 @@ header.header-sticky {
   background: rgba(133, 178, 255, 0.1);
   border: 1px solid rgba(255, 150, 57, 0.5);
   border-radius: 100%;
+  cursor: pointer;
 }
 </style>

@@ -18,33 +18,16 @@
     </div>
     <section class="max-w-xs md:max-w-screen-md mx-auto py-16 -mt-5 rounded-md">
       <div class="flex flex-col sm:flex-row">
-        <div class="sm:w-1/2 flex items-center justify-center pb-4 sm:pb-0">
+        <div class="sm:w-1/2 flex items-center justify-center">
+          <transition name="slide-fade" mode="out-in">
+            <h2 class="words pb-5 sm:pb-0" :key="word">{{ word }}!</h2>
+          </transition>
+        </div>
+        <div class="sm:w-1/2 flex items-center justify-center">
           <img
             :src="require(`@/assets/images/frederikkohler.png`)"
             alt="Frederik Kohler Comic Art"
           />
-        </div>
-        <div class="sm:w-1/2 flex items-center flex-col">
-          <p class="px-4 sm:px-0 sm:pr-4 pb-4">
-            Ich bin
-            <strong>Frederik Kohler</strong>
-            . Ich komme aus
-            <strong>Waldshut-Tiengen</strong>
-            und bin
-            <strong>Frontend-Entwickler & Mediengestalter</strong>
-            .
-          </p>
-          <p class="px-4 sm:px-0 sm:pr-4">
-            Als Kind war ich immer von alten Computern umgeben. Ich lernte über
-            das Programmieren aus einem Büchern und aus dem Internet. Ich habe
-            meine Karriere sehr jung begonnen, indem ich mir alles selbst
-            beigebracht habe, später folgte die Fotografie und ich begann ein
-            Auge für Designs zu entwickeln. Ich wollte erst Webdesigner werden,
-            aber manchmal lässt es das Leben nicht zu, dass man es auf seine
-            Weise macht. 2018 begann ich nach mehr als 10 Jahren mein Hobby zum
-            beruf zu machen, zog nach Hamburg und absolvierte eine Umschulung
-            zum Mediengestalter.
-          </p>
         </div>
       </div>
     </section>
@@ -59,7 +42,7 @@ import Footer from '@/components/Footer.vue'
 const words = ['Hallo', 'Hola', 'Servus', 'Grüezi', 'Aloha', 'Hoi', 'Moin']
 
 export default {
-  name: 'About',
+  name: 'Contact',
   components: {
     Header,
     Footer,
@@ -111,8 +94,6 @@ section {
 }
 p {
   color: #fff;
-  font-weight: 400;
-  text-align: left;
 }
 h2.hero {
   font-size: clamp(20px, 5vw, 40px);
