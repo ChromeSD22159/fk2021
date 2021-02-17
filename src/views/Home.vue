@@ -89,6 +89,7 @@ div.hero::before {
   height: 50px;
   z-index: -1 !important;
 }
+
 section {
   position: relative;
   z-index: 5;
