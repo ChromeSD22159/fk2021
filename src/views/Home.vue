@@ -25,18 +25,19 @@
             <h2 class="words pb-5 sm:pb-0" :key="word">{{ word }}!</h2>
           </transition>
           <p class="pb-4">
-            Seit seit über 10 Jahren beschäftige ich mich mit digitalen Medien,
+            Seit über 10 Jahren beschäftige ich mich mit digitalen Medien und
             seit 2019 bin ich Mediengestalter Digital & Print. Ich befasste mich
             in Hamburg von 2018-2020 überwiegend mit der Entwicklung von
-            WordPress-Webseiten, Gestaltung. Die moderne Front-End-Entwicklung
-            reizte so sehr, das ich in meiner Freizeit nicht die Finger davon
-            lassen konnte.
+            WordPress-Webseiten und der Gestaltung von crossmedialen Medien.
+            Doch die moderne Front-End-Entwicklung reizte mich so sehr, das ich
+            in meiner Freizeit nicht die Finger davon lassen konnte.
           </p>
           <p>
-            Das Leben als Entwickler oder UI Designer ist für mich ein Traum,
-            weshalb ich mich dazu entschied, Laravel und Vue.js zulernen um
-            meinen selbst weiterzubilden. Daher bin ich auf der suche nach einer
-            neuen Herausforderung als Entwickler!
+            Ein Leben als Entwickler oder UI Designer ist für mich ein Traum,
+            weshalb ich mich dazu entschied, noch Laravel und Vue.js dazu
+            zulernen, um mich selbst weiterzubilden. Nun bin ich auf der Suche
+            nach einer neuen Herausforderung als Entwickler! Meine Kenntnisse
+            auszubauen und in der Praxis weiter zu festigen!
           </p>
         </div>
         <div class="sm:w-1/2 flex items-center justify-center">
