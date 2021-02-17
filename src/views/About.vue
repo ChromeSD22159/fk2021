@@ -18,8 +18,11 @@
     </div>
     <section class="max-w-xs md:max-w-screen-md mx-auto py-16 -mt-5 rounded-md">
       <div class="flex flex-col sm:flex-row">
-        <div class="sm:w-1/2 flex items-center justify-center">
-          <img :src="require(`@/assets/images/frederikkohler.png`)" />
+        <div class="sm:w-1/2 flex items-center justify-center pb-4 sm:pb-0">
+          <img
+            :src="require(`@/assets/images/frederikkohler.png`)"
+            alt="Frederik Kohler Comic Art"
+          />
         </div>
         <div class="sm:w-1/2 flex items-center flex-col">
           <p class="px-4 sm:px-0 sm:pr-4 pb-4">

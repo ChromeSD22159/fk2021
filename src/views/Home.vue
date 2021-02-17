@@ -24,7 +24,10 @@
           </transition>
         </div>
         <div class="sm:w-1/2 flex items-center justify-center">
-          <img :src="require(`@/assets/images/frederikkohler.png`)" />
+          <img
+            :src="require(`@/assets/images/frederikkohler.png`)"
+            alt="Frederik Kohler Comic Art"
+          />
         </div>
       </div>
     </section>

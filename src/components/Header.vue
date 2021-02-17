@@ -6,7 +6,10 @@
     >
       <div class="pl-4 w-1/2 md:w-60 xl:w-72">
         <router-link to="/">
-          <img :src="require(`@/assets/images/frederikkohler_logo.svg`)" />
+          <img
+            :src="require(`@/assets/images/frederikkohler_logo.svg`)"
+            alt="Frederik kohler Logo"
+          />
         </router-link>
       </div>
 
