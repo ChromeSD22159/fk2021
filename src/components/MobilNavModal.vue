@@ -38,6 +38,7 @@
           v-for="route in routes"
           v-bind:key="route.name"
           v-on:click="CloseNav"
+          class="p-2 text-white"
         >
           <router-link :to="'/' + route.url">{{ (route.name) }}</router-link>
         </li>

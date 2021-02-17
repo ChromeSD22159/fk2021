@@ -27,8 +27,8 @@ export default {
           name: 'xing',
           url: 'https://www.xing.com/profile/Frederik_Kohler2/cv',
         },
-        { name: 'Git', url: 'https://github.com/ChromeSD22159/my-portfolio' },
-        { name: 'tel', url: 'tel:+4915147141009' },
+        { name: 'Git', url: 'https://github.com/ChromeSD22159/fk2021' },
+        { name: 'tel', url: 'tel:+41782125777' },
         { name: 'mail', url: 'mailto:info@frederikkohler.de' },
       ],
     }
