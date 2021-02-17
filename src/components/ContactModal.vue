@@ -1,7 +1,7 @@
 <template>
   <!-- Contct -->
   <div class="contact-modal">
-    <div class="modal-inner bg-white w-8/12 sm:w-5/12 p-10 rounded-md">
+    <div class="modal-inner bg-white w-9/12 sm:w-5/12 p-10 rounded-md">
       <div class="close" v-show="ContactActive" v-on:click="CloseContact">
         <svg
           class="w-6 h-6"
