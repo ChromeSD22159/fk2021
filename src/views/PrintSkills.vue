@@ -129,4 +129,8 @@ export default {
 svg {
   fill: red !important;
 }
+
+.splide__slide img {
+  border-radius: 5%;
+}
 </style>
