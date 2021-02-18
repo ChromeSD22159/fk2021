@@ -5,7 +5,9 @@ import './assets/tailwind.css'
 
 import SequentialEntrance from 'vue-sequential-entrance'
 import 'vue-sequential-entrance/vue-sequential-entrance.css'
-Vue.use(SequentialEntrance)
+/* https://splidejs.com/ */
+import VueSplide from '@splidejs/vue-splide'
+Vue.use(SequentialEntrance, VueSplide)
 
 Vue.config.productionTip = false
 
