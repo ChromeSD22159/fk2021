@@ -122,12 +122,12 @@ export default {
 </script>
 
 <style scoped>
-#splide01 ul li.splide__slide {
-  padding: 1em;
-}
-
 svg {
   fill: red !important;
+}
+
+.splide__slide {
+  padding: 0.5em !important;
 }
 
 .splide__slide img {
