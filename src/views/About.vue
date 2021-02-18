@@ -22,8 +22,8 @@
       <div class="flex flex-col sm:flex-row">
         <div class="sm:w-1/2 flex items-center justify-center pb-4 sm:pb-0">
           <img
-            :src="require(`@/assets/images/frederikkohler.png`)"
-            alt="Frederik Kohler Comic Art"
+            :src="require(`@/assets/images/frederikkohler_portrait.png`)"
+            alt="Frederik Kohler Portrait"
           />
         </div>
         <div class="sm:w-1/2 flex items-center flex-col">
